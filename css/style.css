@@ -114,6 +114,9 @@ About
 #about .text {
   text-align: left;
 }
+#about .section-title {
+  text-transform: capitalize;
+}
 
 @media screen and (max-width: 600px) {
   /*-------------------------------------------
@@ -125,4 +128,37 @@ About
   #about img {
     margin-right: 0;
   }
+}
+/*-------------------------------------------
+Bicycle
+-------------------------------------------*/
+#bicycle ul {
+  display: flex;
+  justify-content: space-between;
+}
+#bicycle li {
+  width: 32%;
+}
+#bicycle .section-title {
+  text-transform: capitalize;
+}
+@media screen and (max-width: 600px) {
+  /*-------------------------------------------
+  Bicycle
+  -------------------------------------------*/
+  #bicycle ul {
+    flex-direction: column;  /* 画像を縦並びに配置します */
+  }
+  #bicycle li {
+    width: 100%;             /* 画像を横幅いっぱいまで表示します */
+    margin-bottom: 30px;
+  }
+}
+/*-------------------------------------------
+footer
+-------------------------------------------*/
+#footer {
+  font-size: 0.5rem;
+  padding: 10px 0;
+  text-align: center;
 }
